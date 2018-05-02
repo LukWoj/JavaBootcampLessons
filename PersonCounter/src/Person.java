@@ -14,18 +14,18 @@ public class Person {
         return person;
     }
 
-    private Person(String name, String surname) {
+    public Person(String name, String surname) {
         this.name = name;
         this.surname = surname;
         Person.COUNT_PERSON++;
     }
 
-    private Person(String name) {
+    public Person(String name) {
         this.name = name;
         Person.COUNT_PERSON++;
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 }
